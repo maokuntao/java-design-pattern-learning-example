@@ -1,4 +1,4 @@
-package com.java.designpattern.adapter.ducks;
+package com.java.designpattern.combining.ducks;
 
 /**
  * 飞行行为的一个具体实现

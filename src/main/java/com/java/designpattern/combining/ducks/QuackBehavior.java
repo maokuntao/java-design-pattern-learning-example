@@ -1,4 +1,4 @@
-package com.java.designpattern.adapter.ducks;
+package com.java.designpattern.combining.ducks;
 
 /**
  * 所有呱呱叫行为都必须实现的接口

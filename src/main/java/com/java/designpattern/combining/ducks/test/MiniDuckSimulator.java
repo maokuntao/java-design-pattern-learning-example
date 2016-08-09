@@ -1,9 +1,9 @@
-package com.java.designpattern.adapter.ducks.test;
+package com.java.designpattern.combining.ducks.test;
 
-import com.java.designpattern.adapter.ducks.Duck;
-import com.java.designpattern.adapter.ducks.FlyRocketPower;
-import com.java.designpattern.adapter.ducks.MallardDuck;
-import com.java.designpattern.adapter.ducks.ModelDuck;
+import com.java.designpattern.combining.ducks.Duck;
+import com.java.designpattern.combining.ducks.FlyRocketPower;
+import com.java.designpattern.combining.ducks.MallardDuck;
+import com.java.designpattern.combining.ducks.ModelDuck;
 
 /**
  * 测试类

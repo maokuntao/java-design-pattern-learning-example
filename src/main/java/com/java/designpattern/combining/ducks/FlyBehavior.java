@@ -1,4 +1,4 @@
-package com.java.designpattern.adapter.ducks;
+package com.java.designpattern.combining.ducks;
 
 /**
  *  所有飞行行为都必须实现的接口

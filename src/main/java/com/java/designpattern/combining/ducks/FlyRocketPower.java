@@ -1,6 +1,6 @@
-package com.java.designpattern.adapter.ducks;
+package com.java.designpattern.combining.ducks;
 
-import com.java.designpattern.adapter.ducks.FlyBehavior;
+import com.java.designpattern.combining.ducks.FlyBehavior;
 
 /**
  * 一种具有火箭动力的飞行行为

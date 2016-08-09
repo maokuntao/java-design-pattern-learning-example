@@ -6,3 +6,6 @@
 Java核心技术学习代码<br>
 - src/main/reources 目录<br>
 代码运行依赖的配置文件和资源文件
+
+### List
+- [策略模式](src/main/java/com/java/designpattern/combining/adapater pattern.md)
