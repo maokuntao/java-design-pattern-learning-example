@@ -25,7 +25,6 @@
  - `java.util.Observable` 是一个类，而不是一个接口。毕竟Java不支持多继承，所以这限制了它的复用能力。我们也没办法建立自己的实现。这个设计违反了**多用组合，少用继承**的设计原则。
 
 > 
-
 在JDK中，还有其他的使用观察者模式的例子，例如：JavaBeans里的`java.beans.PropertyChangeListener`接口，Swing API里的`javax.swing.JButton`等。
 
 
