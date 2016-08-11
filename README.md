@@ -10,6 +10,7 @@ Java核心技术学习代码<br>
 ### List：
 - [策略模式](src/main/java/com/java/designpattern/combining/combining.md)
 - [观察者模式](src/main/java/com/java/designpattern/observer/observer.md)
+- [装饰者者模式](src/main/java/com/java/designpattern/decorator/decorator.md)
 
 ### 参考：
 - [Head First 设计模式](https://book.douban.com/subject/2243615/)
