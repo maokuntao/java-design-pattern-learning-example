@@ -3,12 +3,14 @@
 ### 定义：
 
 > 
-装饰者模式(decorator pattern) : 动态地将功能附加在对象上
+装饰者模式(decorator pattern) : 动态地将功能附加在对象上，想要扩展功能，装饰者提供有别于继承的另一种选择。
 
 > 
 实际上，在JDK中内置了观察者模式。
 `java.io` 包内就存在大量的装饰者模式，在这些包中，有许多类都是装饰者。
-`java.io.FileInputStream` 是被装饰的“组件”，
+`java.io.FileInputStream` 是被装饰的“组件”；    
+`java.io.BufferedInputStream` 是一个具体的装饰者，它加入两种行为：利用缓冲输入来改进性能，用一个`readLine()` 方法来增强接口；    
+`java.io.LineNumberInputStream` 也是一个具体的装饰者，它加上了计算行数的能力。
 
 ### 设计原则:
 
