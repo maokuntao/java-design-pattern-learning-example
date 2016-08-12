@@ -24,13 +24,7 @@ public class WeatherStation {
 		weatherData.setMeasurements(80, 65, 30.4f);
 		weatherData.setMeasurements(82, 70, 29.2f);
 		weatherData.setMeasurements(78, 90, 29.2f);
+		
 	}
 	
-	/**
-	 * ⚠️，使用JDK自带的观察者模式时，不要依赖于观察者被通知的次序
-	 * java.util.Observable的黑暗面
-	 * 
-	 * 
-	 * 
-	 */
 }
