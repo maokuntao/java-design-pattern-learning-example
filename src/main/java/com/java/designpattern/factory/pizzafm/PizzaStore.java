@@ -8,7 +8,7 @@ package com.java.designpattern.factory.pizzafm;
 public abstract class PizzaStore {
 
 	/**
-	 * 制造pizza（由于不同pizza店的制作pizza方式不一，所以需要每个具体的pizza店自己来实现制作pizza的过程）
+	 * 根据参数来制造pizza（由于不同pizza店的制作pizza方式不一，所以需要每个具体的pizza店自己来实现制作pizza的过程）
 	 * 
 	 * @param item
 	 *            pizza类型

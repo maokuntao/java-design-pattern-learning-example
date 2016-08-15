@@ -1,8 +1,8 @@
 package com.java.designpattern.factory.pizzafm;
 
 /**
- * pizza店工厂
- * 
+ * pizza店
+ * （一个依赖性很高的pizza店）
  * @author taomk
  * 2016年8月15日 上午10:59:17
  */
