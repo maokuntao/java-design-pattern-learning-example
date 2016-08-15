@@ -6,7 +6,7 @@
 
 ### 定义：
 
-> 单例模式(singleton pattern) :
+> 单例模式(singleton pattern) :用于创建一个独一无二的，只有一个示例的对象。
 
 > 
 
