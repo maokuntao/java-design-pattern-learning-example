@@ -6,7 +6,7 @@ import com.java.designpattern.factory.pizzaaf.Pizza;
 import com.java.designpattern.factory.pizzaaf.PizzaStore;
 
 /**
- * 披萨工厂测试类
+ * 披萨工厂测试类（抽象方法模式）
  * 
  * @author taomk 2016年8月15日 下午4:24:05
  */

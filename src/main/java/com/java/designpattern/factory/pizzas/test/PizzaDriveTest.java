@@ -5,7 +5,7 @@ import com.java.designpattern.factory.pizzas.PizzaStore;
 import com.java.designpattern.factory.pizzas.SimplePizzaFactory;
 
 /**
- * pizza店测试类
+ * pizza店测试类（简单工厂模式）
  * 
  * @author taomk 2016年8月12日 下午3:13:16
  */

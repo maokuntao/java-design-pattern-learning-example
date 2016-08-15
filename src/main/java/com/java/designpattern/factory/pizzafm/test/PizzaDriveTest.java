@@ -6,7 +6,7 @@ import com.java.designpattern.factory.pizzafm.Pizza;
 import com.java.designpattern.factory.pizzafm.PizzaStore;
 
 /**
- * pizza店测试类
+ * pizza店测试类（工厂方法模式）
  * 
  * @author taomk
  * 2016年8月15日 上午10:55:37
