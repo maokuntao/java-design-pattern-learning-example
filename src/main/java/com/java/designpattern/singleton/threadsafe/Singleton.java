@@ -13,8 +13,14 @@ public class Singleton {
 	}
 
 	/**
+	 * <pre>
 	 * 通过添加synchronized关键字，迫使每一个线程在进入getInstance方法之前，都必须先等待其他线程离开该方法。<br>
-	 * 也就是说，不会有两个线程可以同时进入该方法。
+	 * 也就是说，不会有两个线程可以同时进入该方法。<br>
+	 * <b>问题：降低了性能</b>
+	 * 实际上只需要第一次执行方法的时候，才需要同步。<br>
+	 * 一旦设置好uniqueInstance变量，就不再需要同步，这时，同步反而会成为一个累赘。
+	 * </pre>
+	 * 
 	 * @return uniqueInstance
 	 */
 	public synchronized static Singleton getInstance() {
