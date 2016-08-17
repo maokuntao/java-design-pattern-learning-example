@@ -13,6 +13,7 @@ Java核心技术学习代码<br>
 - [装饰者模式](src/main/java/com/java/designpattern/decorator/decorator.md)
 - [工厂模式](src/main/java/com/java/designpattern/factory/factory.md)
 - [单例模式](src/main/java/com/java/designpattern/singleton/singleton.md)
+- [命令模式](src/main/java/com/java/designpattern/command/command.md)
 
 ### 参考：
 - [Head First 设计模式](https://book.douban.com/subject/2243615/)
