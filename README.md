@@ -15,6 +15,7 @@ Java核心技术学习代码<br>
 - [单例模式](src/main/java/com/java/designpattern/singleton/singleton.md)
 - [命令模式](src/main/java/com/java/designpattern/command/command.md)
 - [适配器模式](src/main/java/com/java/designpattern/adapter/adapter.md)
+- [外观模式](src/main/java/com/java/designpattern/facade/facade.md)
 
 ### 参考：
 - [Head First 设计模式](https://book.douban.com/subject/2243615/)
