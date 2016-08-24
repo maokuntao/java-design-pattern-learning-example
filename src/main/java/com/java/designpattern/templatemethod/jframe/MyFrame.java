@@ -21,6 +21,7 @@ public class MyFrame extends JFrame {
 		this.setVisible(true);
 	}
 	
+//	JFrame提供的钩子
 	public void paint(Graphics graphics) {
 		super.paint(graphics);
 		String msg = "I rule!!";
