@@ -15,6 +15,7 @@ public class Waitress {
 		this.dinerMenu = dinerMenu;
 	}
  
+//	通过迭代器，将之前通过ArrayList和MenuItem[]的实现解耦，现在她只需要取得迭代器即可
 	public void printMenu() {
 		Iterator pancakeIterator = pancakeHouseMenu.createIterator();
 		Iterator dinerIterator = dinerMenu.createIterator();

@@ -7,5 +7,8 @@ package com.java.designpattern.iterator.dinermerge;
  */
 public interface Menu {
 
+	/**
+	 * @return 封装的迭代器
+	 */
 	public Iterator createIterator();
 }
