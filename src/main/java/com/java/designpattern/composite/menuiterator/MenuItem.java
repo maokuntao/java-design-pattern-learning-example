@@ -3,7 +3,7 @@ package com.java.designpattern.composite.menuiterator;
 import java.util.Iterator;
 
 /**
- *
+ * 菜单项目－叶子节点
  *
  * @author taomk
  * 2016年9月1日 下午9:46:39
@@ -43,7 +43,7 @@ public class MenuItem extends MenuComponent {
 	}
 
 	@Override
-	public Iterator createIterator() {
+	public Iterator<MenuComponent> createIterator() {
 		return new NullIterator();
 	}
  

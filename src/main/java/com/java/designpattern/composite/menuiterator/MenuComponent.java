@@ -3,7 +3,7 @@ package com.java.designpattern.composite.menuiterator;
 import java.util.Iterator;
 
 /**
- *菜单组件
+ * 菜单组件
  *
  * @author taomk
  * 2016年9月1日 下午9:36:56
@@ -33,7 +33,7 @@ public abstract class MenuComponent {
 		throw new UnsupportedOperationException();
 	}
 
-	public abstract Iterator createIterator();
+	public abstract Iterator<MenuComponent> createIterator();
  
 	public void print() {
 		throw new UnsupportedOperationException();

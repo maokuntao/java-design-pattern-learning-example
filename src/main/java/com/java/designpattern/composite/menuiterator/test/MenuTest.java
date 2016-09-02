@@ -3,7 +3,7 @@ package com.java.designpattern.composite.menuiterator.test;
 import com.java.designpattern.composite.menuiterator.*;
 
 /**
- *
+ *测试类
  *
  * @author taomk
  * 2016年9月1日 下午9:50:53

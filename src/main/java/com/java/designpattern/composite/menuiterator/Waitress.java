@@ -3,7 +3,7 @@ package com.java.designpattern.composite.menuiterator;
 import java.util.Iterator;
 
 /**
- *
+ * 女侍者
  *
  * @author taomk
  * 2016年9月1日 下午9:48:12
@@ -21,7 +21,7 @@ public class Waitress {
 	}
   
 	public void printVegetarianMenu() {
-		Iterator iterator = allMenus.createIterator();
+		Iterator<MenuComponent> iterator = allMenus.createIterator();
 
 		System.out.println("\nVEGETARIAN MENU\n----");
 		while (iterator.hasNext()) {

@@ -4,21 +4,22 @@ import java.util.Iterator;
 import java.util.Stack;
 
 /**
- *
+ * 组合迭代器
  *
  * @author taomk
  * 2016年9月1日 下午9:43:57
  */
-public class CompositeIterator implements Iterator<Object> {
-	Stack stack = new Stack();
+public class CompositeIterator implements Iterator<MenuComponent> {
+	
+	Stack<Iterator<MenuComponent>> stack = new Stack<Iterator<MenuComponent>>();
 	   
-	public CompositeIterator(Iterator iterator) {
+	public CompositeIterator(Iterator<MenuComponent> iterator) {
 		stack.push(iterator);
 	}
    
-	public Object next() {
+	public MenuComponent next() {
 		if (hasNext()) {
-			Iterator iterator = (Iterator) stack.peek();
+			Iterator<MenuComponent> iterator = (Iterator<MenuComponent>) stack.peek();
 			MenuComponent component = (MenuComponent) iterator.next();
 			if (component instanceof Menu) {
 				stack.push(component.createIterator());
@@ -29,11 +30,12 @@ public class CompositeIterator implements Iterator<Object> {
 		}
 	}
   
+//	使用了递归来判断是否有下一个元素
 	public boolean hasNext() {
 		if (stack.empty()) {
 			return false;
 		} else {
-			Iterator iterator = (Iterator) stack.peek();
+			Iterator<MenuComponent> iterator = (Iterator<MenuComponent>) stack.peek();
 			if (!iterator.hasNext()) {
 				stack.pop();
 				return hasNext();
