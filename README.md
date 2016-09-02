@@ -19,6 +19,7 @@ Java核心技术学习代码<br>
 - [模版方法模式](src/main/java/com/java/designpattern/templatemethod/templatemethod.md)
 - [迭代器模式](src/main/java/com/java/designpattern/iterator/iterator.md)
 - [组合模式](src/main/java/com/java/designpattern/composite/composite.md)
+- [状态模式](src/main/java/com/java/designpattern/state/state.md)
 
 ### 参考：
 - [Head First 设计模式](https://book.douban.com/subject/2243615/)
