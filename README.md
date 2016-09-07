@@ -24,3 +24,4 @@ Java核心技术学习代码<br>
 
 ### 参考：
 - [Head First 设计模式](https://book.douban.com/subject/2243615/)
+- [《Java与模式》](http://www.cnblogs.com/java-my-life/)
