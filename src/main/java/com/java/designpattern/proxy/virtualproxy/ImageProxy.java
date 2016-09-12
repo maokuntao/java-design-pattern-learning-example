@@ -1,4 +1,4 @@
-package com.java.designpattern.proxy.rmi.virtualproxy;
+package com.java.designpattern.proxy.virtualproxy;
 
 import java.awt.Component;
 import java.awt.Graphics;

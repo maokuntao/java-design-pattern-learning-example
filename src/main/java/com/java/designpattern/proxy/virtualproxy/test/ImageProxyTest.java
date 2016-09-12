@@ -1,4 +1,4 @@
-package com.java.designpattern.proxy.rmi.virtualproxy.test;
+package com.java.designpattern.proxy.virtualproxy.test;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,8 +9,7 @@ import java.util.Hashtable;
 
 import javax.swing.*;
 
-import com.java.designpattern.proxy.rmi.virtualproxy.ImageComponent;
-import com.java.designpattern.proxy.rmi.virtualproxy.ImageProxy;
+import com.java.designpattern.proxy.virtualproxy.*;
 
 /**
  * 测试类
