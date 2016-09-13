@@ -24,6 +24,7 @@ public class MatchMakingTest {
 	}
 
 	public void drive() {
+		
 		PersonBean joe = getPersonFromDatabase("Joe Javabean");
 		PersonBean ownerProxy = getOwnerProxy(joe);
 		System.out.println("Name is " + ownerProxy.getName());
@@ -49,14 +50,20 @@ public class MatchMakingTest {
 	}
 
 	private PersonBean getOwnerProxy(PersonBean person) {
-		return (PersonBean) Proxy.newProxyInstance(person.getClass().getClassLoader(),
-				person.getClass().getInterfaces(), new OwnerInvocationHandler(person));
+		return (PersonBean) Proxy.newProxyInstance(
+				person.getClass().getClassLoader(),// ClassLoader
+				person.getClass().getInterfaces(), // interface
+				new OwnerInvocationHandler(person) // 针对本人的InvocationHandler
+				);
 	}
 
 	PersonBean getNonOwnerProxy(PersonBean person) {
 
-		return (PersonBean) Proxy.newProxyInstance(person.getClass().getClassLoader(),
-				person.getClass().getInterfaces(), new NonOwnerInvocationHandler(person));
+		return (PersonBean) Proxy.newProxyInstance(
+				person.getClass().getClassLoader(),// ClassLoader
+				person.getClass().getInterfaces(), // interface
+				new NonOwnerInvocationHandler(person) // 非本人的InvocationHandler
+				);
 	}
 
 	private PersonBean getPersonFromDatabase(String name) {
