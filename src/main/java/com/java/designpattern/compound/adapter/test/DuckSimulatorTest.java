@@ -19,6 +19,7 @@ public class DuckSimulatorTest {
 		Quackable redheadDuck = new RedheadDuck();
 		Quackable duckCall = new DuckCall();
 		Quackable rubberDuck = new RubberDuck();
+//		将一只鹅通过适配器转换成一只鸭子
 		Quackable gooseDuck = new GooseAdapter(new Goose());
  
 		System.out.println("\nDuck Simulator: With Goose Adapter");
