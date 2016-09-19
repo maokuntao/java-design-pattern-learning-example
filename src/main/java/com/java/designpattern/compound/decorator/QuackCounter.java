@@ -1,5 +1,7 @@
 package com.java.designpattern.compound.decorator;
 
+import com.java.designpattern.compound.adapter.Quackable;
+
 /**
  * 使用装饰者模式给呱呱叫这一行为添加技术功能
  *
