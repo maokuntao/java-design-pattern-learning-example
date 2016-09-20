@@ -17,5 +17,5 @@ public interface QuackObservable {
 	/**
 	 * 通知所有的观察者
 	 */
-	public void nofityObservers();
+	public void notifyObservers();
 }
