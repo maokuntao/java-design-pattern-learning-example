@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * 观察者
+ * 观察者－具备真正观察能力
  *
  * @author taomk
  * 2016年9月20日 下午6:56:14
