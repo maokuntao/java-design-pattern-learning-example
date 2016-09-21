@@ -1,6 +1,8 @@
 package com.java.designpattern.compound.mvc;
   
 /**
+ * MVC中的C（节拍控制器）
+ * 
  * @author taomk
  * 2016年9月21日 下午8:01:08
  */

@@ -5,6 +5,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
+ * 唱片界面
+ * 
  * @author taomk
  * 2016年9月21日 下午8:01:08
  */    
@@ -35,6 +37,7 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver {
 		model.registerObserver((BPMObserver)this);
     }
     
+//    创建视图
     public void createView() {
 		// Create all Swing components here
         viewPanel = new JPanel(new GridLayout(1, 2));
@@ -53,7 +56,7 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver {
         viewFrame.setVisible(true);
 	}
   
-  
+//  添加控制按钮视图
     public void createControls() {
 		// Create all Swing components here
         JFrame.setDefaultLookAndFeelDecorated(true);
@@ -125,25 +128,26 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver {
     }
 
 	public void enableStopMenuItem() {
-    	stopMenuItem.setEnabled(true);
+		stopMenuItem.setEnabled(true);
 	}
 
 	public void disableStopMenuItem() {
-    	stopMenuItem.setEnabled(false);
+		stopMenuItem.setEnabled(false);
 	}
 
 	public void enableStartMenuItem() {
-    	startMenuItem.setEnabled(true);
+		startMenuItem.setEnabled(true);
 	}
 
 	public void disableStartMenuItem() {
-    	startMenuItem.setEnabled(false);
+		startMenuItem.setEnabled(false);
 	}
 
+	@Override
     public void actionPerformed(ActionEvent event) {
 		if (event.getSource() == setBPMButton) {
 			int bpm = Integer.parseInt(bpmTextField.getText());
-        	controller.setBPM(bpm);
+        		controller.setBPM(bpm);
 		} else if (event.getSource() == increaseBPMButton) {
 			controller.increaseBPM();
 		} else if (event.getSource() == decreaseBPMButton) {
@@ -151,21 +155,23 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver {
 		}
     }
 
+	@Override
 	public void updateBPM() {
 		if (model != null) {
 			int bpm = model.getBPM();
 			if (bpm == 0) {
 				if (bpmOutputLabel != null) {
-        			bpmOutputLabel.setText("offline");
+        				bpmOutputLabel.setText("offline");
 				}
 			} else {
 				if (bpmOutputLabel != null) {
-        			bpmOutputLabel.setText("Current BPM: " + model.getBPM());
+        				bpmOutputLabel.setText("Current BPM: " + model.getBPM());
 				}
 			}
 		}
 	}
   
+	@Override
 	public void updateBeat() {
 		if (beatBar != null) {
 			 beatBar.setValue(100);

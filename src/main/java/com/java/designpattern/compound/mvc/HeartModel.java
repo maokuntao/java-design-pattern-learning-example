@@ -1,11 +1,11 @@
 package com.java.designpattern.compound.mvc;
   
+import java.util.*;
+
 /**
  * @author taomk
  * 2016年9月21日 下午8:01:08
  */
-import java.util.*;
-
 public class HeartModel implements HeartModelInterface, Runnable {
 	
 	ArrayList<BeatObserver> beatObservers = new ArrayList<BeatObserver>();
@@ -15,11 +15,13 @@ public class HeartModel implements HeartModelInterface, Runnable {
 	Random random = new Random(System.currentTimeMillis());
 	Thread thread;
 
+	// 创建一个新的线程，并启动
 	public HeartModel() {
 		thread = new Thread(this);
 		thread.start();
 	}
 
+	@Override
 	public void run() {
 		int lastrate = -1;
 
@@ -31,9 +33,11 @@ public class HeartModel implements HeartModelInterface, Runnable {
 			int rate = 60000/(time + change);
 			if (rate < 120 && rate > 50) {
 				time += change;
+				// 通知所有的BeatObserver
 				notifyBeatObservers();
 				if (rate != lastrate) {
 					lastrate = rate;
+					// // 通知所有的BPMObserver
 					notifyBPMObservers();
 				}
 			}
