@@ -3,6 +3,8 @@ package com.java.designpattern.compound.mvc;
 import java.util.*;
 
 /**
+ * MVC中的M（心跳频率模型）
+ * 
  * @author taomk
  * 2016年9月21日 下午8:01:08
  */
@@ -37,7 +39,7 @@ public class HeartModel implements HeartModelInterface, Runnable {
 				notifyBeatObservers();
 				if (rate != lastrate) {
 					lastrate = rate;
-					// // 通知所有的BPMObserver
+					// 通知所有的BPMObserver
 					notifyBPMObservers();
 				}
 			}
