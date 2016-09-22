@@ -39,7 +39,7 @@ public class HeartModel implements HeartModelInterface, Runnable {
 				notifyBeatObservers();
 				if (rate != lastrate) {
 					lastrate = rate;
-					// 通知所有的BPMObserver
+					// 一旦频率改变，通知所有的BPMObserver，
 					notifyBPMObservers();
 				}
 			}
@@ -48,14 +48,18 @@ public class HeartModel implements HeartModelInterface, Runnable {
 			} catch (Exception e) {}
 		}
 	}
+	
+	@Override
 	public int getHeartRate() {
 		return 60000/time;
 	}
 
+	@Override
 	public void registerObserver(BeatObserver o) {
 		beatObservers.add(o);
 	}
 
+	@Override
 	public void removeObserver(BeatObserver o) {
 		int i = beatObservers.indexOf(o);
 		if (i >= 0) {
@@ -70,10 +74,12 @@ public class HeartModel implements HeartModelInterface, Runnable {
 		}
 	}
 
+	@Override
 	public void registerObserver(BPMObserver o) {
 		bpmObservers.add(o);
 	}
 
+	@Override
 	public void removeObserver(BPMObserver o) {
 		int i = bpmObservers.indexOf(o);
 		if (i >= 0) {

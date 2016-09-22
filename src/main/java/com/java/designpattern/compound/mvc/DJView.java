@@ -155,6 +155,9 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver {
 		}
     }
 
+	/**
+	 * 更新BPM显示
+	 */
 	@Override
 	public void updateBPM() {
 		if (model != null) {
