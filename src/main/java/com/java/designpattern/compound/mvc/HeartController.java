@@ -1,6 +1,7 @@
 package com.java.designpattern.compound.mvc;
   
 /**
+ * 心跳控制器
  * @author taomk
  * 2016年9月21日 下午8:01:08
  */  

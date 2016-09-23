@@ -4,6 +4,8 @@ import javax.sound.midi.*;
 import java.util.*;
 
 /**
+ * MVC中的M（节拍模型）
+ * 
  * @author taomk
  * 2016年9月21日 下午8:01:08
  */
