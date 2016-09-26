@@ -23,6 +23,7 @@ Java核心技术学习代码<br>
 - [代理模式](src/main/java/com/java/designpattern/proxy/proxy.md)
 - [复合模式](src/main/java/com/java/designpattern/compound/compound.md)
 - [桥接模式](src/main/java/com/java/designpattern/bridge/bridge.md)
+- [建造者模式](src/main/java/com/java/designpattern/builder/builder.md)
 
 
 ### 总结：
@@ -39,3 +40,4 @@ Java核心技术学习代码<br>
 ### 参考：
 - [Head First 设计模式](https://book.douban.com/subject/2243615/)
 - [《Java与模式》](http://www.cnblogs.com/java-my-life/)
+- [Java设计模式](http://blog.csdn.net/jason0539/article/category/3092021)
