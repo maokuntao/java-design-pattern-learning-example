@@ -22,7 +22,7 @@ Java核心技术学习代码<br>
 - [状态模式](src/main/java/com/java/designpattern/state/state.md)
 - [代理模式](src/main/java/com/java/designpattern/proxy/proxy.md)
 - [复合模式](src/main/java/com/java/designpattern/compound/compound.md)
-- [桥接模式](http://www.cnblogs.com/houleixx/archive/2008/02/23/1078877.html)
+- [桥接模式](src/main/java/com/java/designpattern/bridge/bridge.md)
 
 
 ### 总结：
