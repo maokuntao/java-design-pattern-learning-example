@@ -25,6 +25,7 @@ Java核心技术学习代码<br>
 - [桥接模式](src/main/java/com/java/designpattern/bridge/bridge.md)
 - [建造者模式](src/main/java/com/java/designpattern/builder/builder.md)
 - [责任链模式](src/main/java/com/java/designpattern/chain/chain.md)
+- [享元模式](src/main/java/com/java/designpattern/flyweight/flyweight.md)
 
 
 ### 总结：
