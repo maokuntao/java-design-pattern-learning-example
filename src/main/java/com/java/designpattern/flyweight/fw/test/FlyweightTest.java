@@ -29,6 +29,11 @@ public class FlyweightTest {
 		fw5.operate();
 		fw6.operate();
 		
+		/**
+		 * 从结果中可以看出，使用Flyweight Factory模式之后，
+		 * 程序对于重复的对象都共享一个对象，此处的"Google"即为一个对象。
+		 * 
+		 */
 	}
 
 }
