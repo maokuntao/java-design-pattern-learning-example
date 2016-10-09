@@ -28,6 +28,7 @@ Java核心技术学习代码<br>
 - [享元模式](src/main/java/com/java/designpattern/flyweight/flyweight.md)
 - [解释器模式](src/main/java/com/java/designpattern/interpreter/interpreter.md)
 - [中介者模式](src/main/java/com/java/designpattern/mediator/mediator.md)
+- [备忘录模式](src/main/java/com/java/designpattern/memento/memento.md)
 
 ### 总结：
 
