@@ -30,6 +30,7 @@ Java核心技术学习代码<br>
 - [中介者模式](src/main/java/com/java/designpattern/mediator/mediator.md)
 - [备忘录模式](src/main/java/com/java/designpattern/memento/memento.md)
 - [原型模式](src/main/java/com/java/designpattern/prototype/prototype.md)
+- [访问者模式](src/main/java/com/java/designpattern/visitor/visitor.md)
 
 ### 总结：
 
