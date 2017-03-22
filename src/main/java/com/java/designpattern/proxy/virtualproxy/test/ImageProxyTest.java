@@ -43,9 +43,8 @@ public class ImageProxyTest {
 		cds.put("Northern Exposure", "http://images.amazon.com/images/P/B000003SFN.01.LZZZZZZZ.jpg");
 		cds.put("Selected Ambient Works, Vol. 2", "http://images.amazon.com/images/P/B000002MNZ.01.LZZZZZZZ.jpg");
 
-		URL initialURL = new URL((String) cds.get("Selected Ambient Works, Vol. 2"));
-		for (Enumeration<String> e = cds.keys(); e.hasMoreElements();) {
-			String name = (String) e.nextElement();
+		for (Enumeration<String> e = cds.keys(); e.hasMoreElements(); ) {
+			String name = e.nextElement();
 			JMenuItem menuItem = new JMenuItem(name);
 			menu.add(menuItem);
 			menuItem.addActionListener(new ActionListener() {
@@ -57,9 +56,8 @@ public class ImageProxyTest {
 		}
 
 		// set up frame and menus
-
-		Icon icon = new ImageProxy(initialURL);
-		imageComponent = new ImageComponent(icon);
+		URL initialURL = new URL(cds.get("Selected Ambient Works, Vol. 2"));
+		imageComponent = new ImageComponent(new ImageProxy(initialURL));
 		frame.getContentPane().add(imageComponent);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
@@ -69,7 +67,7 @@ public class ImageProxyTest {
 
 	URL getCDUrl(String name) {
 		try {
-			return new URL((String) cds.get(name));
+			return new URL(cds.get(name));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 			return null;
