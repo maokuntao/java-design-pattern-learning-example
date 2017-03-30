@@ -10,7 +10,16 @@ import com.java.designpattern.singleton.enumer.Singleton;
 public class SingletonEnumTest {
 
 	public static void main(String[] args) {
-		Singleton.UNIQUEINSTANCE.whateverMethod();
+		
+		int i = 0;
+		while(i<500){
+			
+			Runnable r = () -> System.out.println(Thread.currentThread().getName() + " : " + Singleton.UNIQUEINSTANCE.hashCode());
+			
+			new Thread(r).start();
+			
+			i++;
+		}
 	}
 
 }
