@@ -19,4 +19,15 @@ public class Singleton {
 	public static Singleton getInstance() {
 		return SingletonHolder.uniqueInstance;
 	}
+	
+	
+	public static void main(String[] args) {
+
+		int i = 1;
+		while(i <= 500){
+			Runnable r = () -> System.out.println(Thread.currentThread().getName() + " : " + Singleton.getInstance());
+			new Thread(r).start();
+			i++;
+		}
+	}
 }
