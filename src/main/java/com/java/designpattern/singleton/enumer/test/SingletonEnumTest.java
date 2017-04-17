@@ -14,6 +14,8 @@ public class SingletonEnumTest {
 		int i = 0;
 		while(i<500){
 			
+			// Enum创建对象
+//			Singleton s = new Singleton();
 			Runnable r = () -> System.out.println(Thread.currentThread().getName() + " : " + Singleton.UNIQUEINSTANCE.hashCode());
 			
 			new Thread(r).start();
