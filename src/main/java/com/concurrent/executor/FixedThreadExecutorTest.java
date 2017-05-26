@@ -17,8 +17,11 @@ public class FixedThreadExecutorTest {
 
 	public static void main(String[] args) {
 
-		java.util.concurrent.ExecutorService fixedExecutorService = Executors.newFixedThreadPool(3);
-
+		int coreCount = Runtime.getRuntime().availableProcessors();
+		
+		System.out.println("Thread pool count : " + coreCount);
+		
+		java.util.concurrent.ExecutorService fixedExecutorService = Executors.newFixedThreadPool(coreCount);
 		
 		for (int i = 0; i < 10; i++) {
 			
@@ -26,7 +29,7 @@ public class FixedThreadExecutorTest {
 				
 				@Override
 				public void run() {
-
+					
 					System.out.println(Thread.currentThread().getName() + " is running... ");
 					try {
 						Thread.sleep(500);
@@ -36,7 +39,9 @@ public class FixedThreadExecutorTest {
 			});
 		}
 		
-		System.out.println("Outter:" + Thread.currentThread().getName() + " is running... ");
+		fixedExecutorService.shutdown();
+		
+		System.out.println("Outter : " + Thread.currentThread().getName() + " is running... ");
 	}
 
 }
