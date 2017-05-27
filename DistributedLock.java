@@ -1,4 +1,4 @@
-package com.concurrent.lock;
+package com.taomk.understandingJVM.concurrent.lock;
 
 import java.io.IOException;
 import java.util.ArrayList;
