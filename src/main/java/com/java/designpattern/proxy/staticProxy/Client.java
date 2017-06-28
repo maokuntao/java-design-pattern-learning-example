@@ -10,7 +10,7 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		// 静态代理模式，此处创建 new UserManagerImpl() 时可以通过一个工程来实现
+		// 静态代理模式，此处创建 new UserManagerImpl() 时可以通过一个工厂来实现
 		UserManager userManager = new UserManagerImplProxy(new UserManagerImpl());
 		userManager.addUser("23333", "TTT");
 	}
