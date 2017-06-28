@@ -47,7 +47,7 @@ public class LogHandler implements InvocationHandler {
 
 		System.out.println("\t args:-->>");
 		for (int i = 0; i < args.length; i++) {
-			System.out.println(args[i]);
+			System.out.println("\t\t" + args[i]);
 		}
 
 		try {

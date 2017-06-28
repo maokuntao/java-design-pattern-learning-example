@@ -1,5 +1,6 @@
 package com.java.designpattern.proxy.dynamicProxy;
 
+import com.java.designpattern.proxy.staticProxy.UserManager;
 import com.java.designpattern.proxy.staticProxy.UserManagerImpl;
 
 /**
@@ -11,9 +12,11 @@ import com.java.designpattern.proxy.staticProxy.UserManagerImpl;
 public class Client {
 
 	public static void main(String[] args) {
-
-		LogHandler logger = new LogHandler(new UserManagerImpl());
 		
+		// 动态代理模式
+		LogHandler logger = new LogHandler(new UserManagerImpl());
+		UserManager userManager = (UserManager) logger.newProxyInstance();
+		userManager.addUser("2333", "Zzz");
 	}
 
 }
