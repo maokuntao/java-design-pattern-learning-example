@@ -13,6 +13,7 @@ public class Person {
 	private String head;
 	private String body;
 	private String foot;
+	
 	public String getHead() {
 		return head;
 	}
