@@ -21,7 +21,8 @@ import org.apache.zookeeper.data.Stat;
  * <pre>
  * <code>
  * DistributedLock lock = null; 
- * try { lock = new
+ * try { 
+ * 	lock = new
  * 	DistributedLock("127.0.0.1:2182","test"); 
  * 	lock.lock(); 
  * 	//do something... 
